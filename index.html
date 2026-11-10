@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BucketList</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="brand">
+      <img src="assets/logo.png" alt="BucketList Logo">
+      <div>
+        <h1>BUCKETLIST</h1>
+        <p>Your goals. Your journey.</p>
+      </div>
+    </header>
+
+    <section class="dashboard">
+      <h2>My Dashboard</h2>
+      <p class="subtitle">Small steps. Big achievements.</p>
+
+      <div class="progress-info">
+        <span id="progress-count">0 / 0 completed</span>
+        <strong id="progress-percent">0%</strong>
+      </div>
+      <div class="progress-track">
+        <div id="progress-fill"></div>
+      </div>
+    </section>
+
+    <section class="add-section">
+      <input id="task-input" type="text" placeholder="What do you want to achieve?">
+      <button id="add-btn">+ Add Goal</button>
+    </section>
+
+    <section class="tasks-section">
+      <div class="tasks-heading">
+        <h2>My Goals</h2>
+        <button id="clear-btn" class="clear-btn">Clear Completed</button>
+      </div>
+      <div id="task-list"></div>
+    </section>
+
+    <footer>BUCKETLIST • MAKE EVERY DAY COUNT</footer>
+  </main>
+  <script src="renderer.js"></script>
+</body>
+</html>
